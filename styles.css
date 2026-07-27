@@ -1,0 +1,158 @@
+{
+  "products": [
+    {
+      "id": "rosa-angel",
+      "name": "Botão de Rosa Angel Chocolate ao Leite 13,3g",
+      "sku": "1002333",
+      "category": "Presentes",
+      "old": 24.0,
+      "price": 22.0,
+      "stock": 3,
+      "image": "assets/rosa-angel.png",
+      "description": "Rosa com bombom de chocolate ao leite e recheio sabor brigadeiro."
+    },
+    {
+      "id": "lacreeme-leite",
+      "name": "Caixa de Bombons Mini Show laCreme ao Leite 108g",
+      "sku": "1002628",
+      "category": "Caixas",
+      "old": 40.0,
+      "price": 38.0,
+      "stock": 3,
+      "image": "assets/lacreeme-leite.png",
+      "description": "Bombons ao leite, ideais para presentear ou saborear."
+    },
+    {
+      "id": "lacreeme-mezzo",
+      "name": "Caixa de Bombons Mini Show laCreme Mezzo Sortido 108g",
+      "sku": "1003102",
+      "category": "Caixas",
+      "old": 40.0,
+      "price": 38.0,
+      "stock": 3,
+      "image": "assets/lacreeme-mezzo.png",
+      "description": "Bombons de chocolate ao leite e branco."
+    },
+    {
+      "id": "lanut-pistache",
+      "name": "Caixa de Bombons LaNut Mini Show Pistache 108g",
+      "sku": "1003229",
+      "category": "Caixas",
+      "old": 42.0,
+      "price": 40.0,
+      "stock": 3,
+      "image": "assets/lanut-pistache.png",
+      "description": "Chocolate ao leite e branco com cremosidade de pistache."
+    },
+    {
+      "id": "lacreeme-gianduia",
+      "name": "Caixa de Bombons laCreme Mini Show Gianduia 108g",
+      "sku": "1003981",
+      "category": "Caixas",
+      "old": 42.0,
+      "price": 40.0,
+      "stock": 3,
+      "image": "assets/lacreeme-gianduia.png",
+      "description": "Bombons ao leite com recheio de creme de avelã."
+    },
+    {
+      "id": "montebello-chocolate",
+      "name": "Marshmallow MonteBello Mousse de Chocolate 90g",
+      "sku": "1001113",
+      "category": "MonteBello",
+      "old": 17.99,
+      "price": 15.99,
+      "stock": 4,
+      "image": "assets/montebello-chocolate.png",
+      "description": "Marshmallow macio com sabor de mousse de chocolate."
+    },
+    {
+      "id": "montebello-maracuja",
+      "name": "Marshmallow MonteBello Mousse de Maracujá 90g",
+      "sku": "1001335",
+      "category": "MonteBello",
+      "old": 17.99,
+      "price": 15.99,
+      "stock": 4,
+      "image": "assets/montebello-maracuja.png",
+      "description": "Textura macia com sabor refrescante de maracujá."
+    },
+    {
+      "id": "montebello-tradicional",
+      "name": "Marshmallow MonteBello Tradicional 90g",
+      "sku": "1000137",
+      "category": "MonteBello",
+      "old": 17.99,
+      "price": 15.99,
+      "stock": 4,
+      "image": "assets/montebello-tradicional.png",
+      "description": "Marshmallow leve e macio, com sabor suave."
+    },
+    {
+      "id": "tabletes-5g",
+      "name": "Tabletes variados 5g",
+      "sku": "VAR-5G",
+      "category": "Tabletes",
+      "old": 2.0,
+      "price": 1.6,
+      "stock": 20,
+      "image": "assets/tablete-darkmilk-55.png",
+      "description": "Dark Milk 55%, branco, café, menta e Bendito Cacao 85%."
+    },
+    {
+      "id": "tabletes-20g",
+      "name": "Tabletes variados 18g a 20g",
+      "sku": "VAR-20G",
+      "category": "Tabletes",
+      "old": 5.29,
+      "price": 5.0,
+      "stock": 20,
+      "image": "assets/tablete-castanha.png",
+      "description": "LaCreme ao leite, Mezzo, 55%, crocante, castanha, pimenta e laranja."
+    },
+    {
+      "id": "trufas-tradicionais",
+      "name": "Trufas tradicionais 30g",
+      "sku": "TRUFA-TRAD",
+      "category": "Trufas",
+      "old": 6.5,
+      "price": 6.0,
+      "stock": 30,
+      "image": "",
+      "description": "Morango, tradicional, maracujá, branco, mezzo, coco, paçoca, pistache e gianduia."
+    },
+    {
+      "id": "trufas-especiais",
+      "name": "Trufas especiais 30g",
+      "sku": "TRUFA-ESP",
+      "category": "Trufas",
+      "old": 7.99,
+      "price": 6.5,
+      "stock": 20,
+      "image": "",
+      "description": "Cereja, petit gâteau, torta de limão, marula, maçã e nozes, zero, noz-pecã, beijinho e cerveja amanteigada."
+    }
+  ],
+  "gifts": [
+    {
+      "id": "caneca-trufas",
+      "name": "Caneca com trufas",
+      "category": "Presentes",
+      "old": null,
+      "price": 50.0,
+      "stock": 2,
+      "image": "",
+      "description": "Caneca com 6 trufas pequenas ou 3 grandes, celofane e laço."
+    },
+    {
+      "id": "lata-coracao",
+      "name": "Lata coração com mini ursinho",
+      "category": "Presentes",
+      "old": null,
+      "price": 50.0,
+      "stock": 2,
+      "image": "",
+      "description": "Lata coração com mini ursinho, 3 rosas e 3 trufas pequenas."
+    }
+  ]
+}
