@@ -25,30 +25,32 @@ O projeto funciona apenas com HTML, CSS e JavaScript, sem backend.
 - Layout responsivo para computador e celular.
 
 ### Como funciona o armazenamento
-Os dados administrativos são armazenados no `localStorage` do navegador.
-Isso permite usar o sistema sem servidor, mas significa que:
-cada navegador possui seu próprio estoque e histórico;
-as alterações não modificam automaticamente o código do GitHub;
-limpar os dados do navegador apaga os dados locais;
-é importante exportar periodicamente os arquivos JSON.
-Estoque
+Os dados administrativos são armazenados no `localStorage` do navegador. Isso permite usar o sistema sem servidor, mas significa que:
+* Cada navegador possui seu próprio estoque e histórico;
+* As alterações não modificam automaticamente o código do GitHub;
+* Limpar os dados do navegador apaga os dados locais;
+* É importante exportar periodicamente os arquivos JSON.
+
+### Estoque   
 Na área administrativa é possível:
-ajustar as quantidades;
-exportar o estoque atual em JSON;
-importar novamente um JSON de estoque;
-restaurar o estoque inicial definido no JavaScript.
-Vendas
+- Ajustar as quantidades;
+- Exportar o estoque atual em JSON;
+- Importar novamente um JSON de estoque;
+- Restaurar o estoque inicial definido no JavaScript.
+   
+### Vendas
 Cada venda registrada contém:
-identificador;
-data e hora;
-produtos;
-opções ou sabores;
-quantidades;
-valores;
-total da venda.
+- Identificador;
+- Data e hora;
+- Produtos;
+- Opções ou sabores;
+- Quantidades;
+- Valores;
+- Total da venda.
+
 O histórico pode ser exportado em:
-`CSV`, para abrir no Excel;
-`JSON`, para backup ou processamento futuro.
+- `CSV`, para abrir no Excel;
+- `JSON`, para backup ou processamento futuro.
 
 ### Estrutura do projeto
 ```text
