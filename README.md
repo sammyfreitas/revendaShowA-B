@@ -69,11 +69,11 @@ Publicação no GitHub Pages
 
 ### Repositório:
 ```text
-sammyfreitas/revendaShowA+B
+sammyfreitas/revendaShowAB
 ```
 ### Site:
 ```text
-https://sammyfreitas.github.io/revendaShowA+B/
+https://sammyfreitas.github.io/revendaShowAB/
 ```
 
 ### Contato
