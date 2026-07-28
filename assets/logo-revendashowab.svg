@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 320" role="img" aria-labelledby="title desc">
+  <title id="title">RevendaShowA+B</title>
+  <desc id="desc">Logo completo da RevendaShowA+B com ícone de cacau</desc>
+  <defs>
+    <linearGradient id="gold" x1="0" x2="1">
+      <stop offset="0" stop-color="#c99a48"/>
+      <stop offset="1" stop-color="#e5c57a"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1400" height="320" rx="36" fill="#fffaf2"/>
+
+  <g transform="translate(40 30)">
+    <circle cx="120" cy="120" r="110" fill="#3c2118"/>
+    <g transform="translate(120 120) rotate(25)">
+      <path d="M0-78C44-67 67-31 63 9C59 50 31 81 0 86C-31 81-59 50-63 9C-67-31-44-67 0-78Z"
+            fill="none" stroke="url(#gold)" stroke-width="12"/>
+      <path d="M0-60V66" stroke="url(#gold)" stroke-width="9" stroke-linecap="round"/>
+      <path d="M-31-30C-13-18 13-18 31-30M-38 3C-16 16 16 16 38 3M-28 35C-10 46 10 46 28 35"
+            fill="none" stroke="url(#gold)" stroke-width="7" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <text x="300" y="138" fill="#3c2118" font-family="Georgia, 'Times New Roman', serif" font-size="76" font-weight="700">RevendaShowA+B</text>
+  <text x="304" y="194" fill="#8a6332" font-family="Arial, sans-serif" font-size="26" letter-spacing="8">CHOCOLATES E PRESENTES</text>
+  <line x1="304" y1="218" x2="1240" y2="218" stroke="#d9b56d" stroke-width="3"/>
+  <text x="304" y="258" fill="#5d3526" font-family="Arial, sans-serif" font-size="24">@revendaShowAB • Tijuca</text>
+</svg>
