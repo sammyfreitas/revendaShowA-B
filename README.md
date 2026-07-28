@@ -78,7 +78,7 @@ https://sammyfreitas.github.io/revendaShowAB/
 
 ### Contato
 Instagram: @revendaShowAB   
-WhatsApp: (21) 96455-4310   
+WhatsApp: (21) 98614-0005   
 Email: revendashowAB@gmail.com   
 Localização: Tijuca, RJ   
 
