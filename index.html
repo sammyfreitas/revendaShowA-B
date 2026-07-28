@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="RevendaShowA+B — chocolates e presentes na Tijuca.">
+  <title>RevendaShowA+B</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon-cacau.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20260727-responsive-1">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand brand-with-logo" href="#inicio" aria-label="RevendaShowA+B">
+      <img src="assets/logo-revendashowab.svg" alt="RevendaShowA+B — chocolates e presentes">
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="mainNav">
+      <a href="#produtos">Produtos</a>
+      <a href="#presentes">Presentes</a>
+      <a href="#como-comprar">Como comprar</a>
+    </nav>
+
+    <div class="top-actions">
+      <a class="social-icon social-image-link"
+         href="https://instagram.com/revendaShowAB"
+         target="_blank"
+         rel="noopener noreferrer"
+         aria-label="Abrir Instagram @revendaShowAB"
+         title="Instagram">
+        <img src="assets/instagram.svg" alt="" width="42" height="42">
+      </a>
+
+      <a class="social-icon social-image-link"
+         href="https://wa.me/5521964554310?text=Ol%C3%A1%21%20Gostaria%20de%20tirar%20uma%20d%C3%BAvida%20sobre%20os%20produtos%20da%20RevendaShowA%2BB."
+         target="_blank"
+         rel="noopener noreferrer"
+         aria-label="Abrir WhatsApp da RevendaShowA+B"
+         title="WhatsApp">
+        <img src="assets/whatsapp.svg" alt="" width="42" height="42">
+      </a>
+
+      <button class="cart-btn" id="openCart" aria-label="Abrir carrinho">
+        <span class="cart-icon">🛒</span>
+        <strong id="cartHeaderTotal">R$ 0,00</strong>
+        <span>(<span id="cartCount">0</span>)</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div>
+        <span class="eyebrow">CHOCOLATES E PRESENTES NA TIJUCA</span>
+        <h1>RevendaShowA+B</h1>
+        <p class="subtitle">Escolha seus chocolates, monte o carrinho e envie o pedido direto pelo WhatsApp.</p>
+        <div class="actions">
+          <a class="btn primary" href="#produtos">Ver produtos</a>
+          <a class="btn whatsapp" href="https://wa.me/5521964554310?text=Ol%C3%A1%21%20Gostaria%20de%20tirar%20uma%20d%C3%BAvida%20sobre%20os%20produtos%20da%20RevendaShowA%2BB." target="_blank" rel="noopener noreferrer">Tirar dúvidas no WhatsApp</a>
+        </div>
+        <div class="chips"><span>📍 Tijuca</span><span>💳 Pix</span><span>🚗 Retirada ou Uber/99</span></div>
+      </div>
+      <div class="hero-card">
+        <img src="assets/rosa-angel.png" alt="Rosa Angel de chocolate">
+        <div><small>DESTAQUE</small><strong>Rosa Angel</strong><p>De R$ 24,00 por <b>R$ 22,00</b></p></div>
+      </div>
+    </section>
+
+    <section class="disclaimer">Revenda independente de produtos Cacau Show. Esta página não é o site oficial da marca.</section>
+
+    
+    <section class="showcase-section" aria-label="Destaques">
+      <div class="showcase-head">
+        <div>
+          <span class="eyebrow">DESTAQUES DA REVENDA</span>
+          <h2>Escolhas que passam por aqui</h2>
+        </div>
+        <div class="showcase-controls">
+          <button id="showcasePrev" aria-label="Destaque anterior">‹</button>
+          <button id="showcaseNext" aria-label="Próximo destaque">›</button>
+        </div>
+      </div>
+
+      <div class="showcase-viewport">
+        <div class="showcase-track" id="showcaseTrack"></div>
+      </div>
+      <div class="showcase-dots" id="showcaseDots"></div>
+    </section>
+
+    <section class="section" id="produtos">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">PRONTA ENTREGA</span>
+          <h2>Escolha seus produtos</h2>
+          <p class="section-description">Nos cards abaixo você escolhe o sabor, informa a quantidade e adiciona ao carrinho.</p>
+        </div>
+        <div class="filters" id="filters"></div>
+      </div>
+
+      <div class="products-grid" id="productGrid"></div>
+    </section>
+
+
+    
+    <section class="section gifts" id="presentes">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">PRESENTES</span>
+          <h2>Opções prontas</h2>
+        </div>
+      </div>
+      <div class="products-grid gifts-grid" id="giftGrid"></div>
+    </section>
+    
+
+    <section class="section how" id="como-comprar">
+      <div class="center"><span class="eyebrow">COMO FUNCIONA</span><h2>Comprar é simples</h2></div>
+      <div class="steps">
+        <article><b>1</b><h3>Escolha</h3><p>Selecione sabor e quantidade.</p></article>
+        <article><b>2</b><h3>Envie</h3><p>O carrinho vira uma mensagem no WhatsApp.</p></article>
+        <article><b>3</b><h3>Pague</h3><p>Após confirmar o estoque, pague via Pix.</p></article>
+        <article><b>4</b><h3>Receba</h3><p>Retire na Tijuca ou peça Uber/99 Entrega. Entregamos no portão.</p></article>
+      </div>
+    </section>
+
+    <section class="location">
+      <div><span class="eyebrow">TIJUCA, RIO DE JANEIRO</span><h2>Retirada ou entrega</h2><p>O endereço exato é informado após a confirmação do pedido. O transporte por Uber/99 é solicitado e pago pelo comprador.</p></div>
+      <a class="btn whatsapp" href="https://wa.me/5521964554310?text=Ol%C3%A1%21%20Gostaria%20de%20consultar%20o%20estoque%20da%20RevendaShowA%2BB." target="_blank" rel="noopener noreferrer">Consultar estoque</a>
+    </section>
+
+    <section class="contact-cta">
+      <div>
+        <span class="eyebrow">FICOU COM ALGUMA DÚVIDA?</span>
+        <h2>Fale com a RevendaShowA+B</h2>
+        <p>Consulte sabores, estoque, presentes, retirada e entrega.</p>
+
+        <p class="contact-email">
+          E-mail:
+          <a href="mailto:revendaShowAB@gmail.com">revendaShowAB@gmail.com</a>
+        </p>
+      </div>
+      <a class="btn whatsapp" href="https://wa.me/5521964554310?text=Ol%C3%A1%21%20Gostaria%20de%20tirar%20uma%20d%C3%BAvida%20sobre%20os%20produtos%20da%20RevendaShowA%2BB." target="_blank" rel="noopener noreferrer">💬 Tirar dúvidas pelo WhatsApp</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <strong>Todos os direitos reservados — RevendaShowA+B</strong>
+      <p>Instagram: <a href="https://instagram.com/revendaShowAB" target="_blank" rel="noopener noreferrer">@revendaShowAB</a></p>
+      <p>E-mail: <a href="mailto:revendaShowAB@gmail.com">revendaShowAB@gmail.com</a></p>
+      <p>Este site foi desenvolvido por Anthony Freitas.</p>
+    </div>
+    <button id="openAdmin">Área de estoque</button>
+  </footer>
+
+  <aside class="drawer" id="cartDrawer">
+    <div class="drawer-head"><div><small>SEU PEDIDO</small><h2>Carrinho</h2></div><button data-close>×</button></div>
+    <div id="cartItems" class="drawer-body"></div>
+    <div class="drawer-foot">
+      <div class="total"><span>Total</span><strong id="cartTotal">R$ 0,00</strong></div>
+      <button class="btn whatsapp full" id="checkout">Enviar pelo WhatsApp</button>
+      <button class="link-btn" id="clearCart">Limpar carrinho</button>
+    </div>
+  </aside>
+
+  <div class="overlay" id="overlay"></div>
+
+  <section class="admin-modal" id="adminModal">
+    <div class="admin-card">
+      <div class="drawer-head"><div><small>GESTÃO LOCAL</small><h2>Estoque e vendas</h2></div><button data-close-admin>×</button></div>
+      <div id="adminLogin" class="login-box">
+        <p>Digite o PIN de acesso.</p>
+        <input id="adminPin" type="password" inputmode="numeric" placeholder="PIN">
+        <button class="btn primary" id="loginAdmin">Entrar</button>
+        <small>PIN inicial: 1234.</small>
+      </div>
+      <div id="adminPanel" class="hidden">
+        <div class="admin-actions admin-actions-expanded">
+          <button class="btn secondary" id="exportStockJson">Exportar estoque JSON</button>
+          <label class="btn secondary file-button">
+            Importar estoque JSON
+            <input type="file" id="importStockJson" accept="application/json,.json">
+          </label>
+          <button class="btn secondary" id="exportSalesJson">Exportar vendas JSON</button>
+          <button class="btn secondary" id="exportSales">Exportar vendas CSV</button>
+          <button class="btn secondary" id="resetData">Restaurar estoque inicial</button>
+        </div>
+        <p class="note">
+          Estoque e vendas ficam salvos neste navegador. Você pode exportar o estoque ajustado em JSON,
+          importar esse arquivo novamente e exportar o histórico completo das vendas.
+        </p>
+        <div id="stockList"></div>
+        <h3>Registrar venda</h3>
+        <div id="manualSale"></div>
+        <button class="btn primary" id="registerSale">Registrar venda e baixar estoque</button>
+        <h3>Últimas vendas</h3>
+        <div id="salesHistory"></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="toast" id="toast"></div>
+  <script src="app.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const toggle = document.getElementById("menuToggle");
+  const nav = document.getElementById("mainNav");
+
+  if (toggle && nav) {
+    toggle.addEventListener("click", function () {
+      const isOpen = nav.classList.toggle("open");
+      toggle.setAttribute("aria-expanded", String(isOpen));
+    });
+
+    nav.querySelectorAll("a").forEach(function (link) {
+      link.addEventListener("click", function () {
+        nav.classList.remove("open");
+        toggle.setAttribute("aria-expanded", "false");
+      });
+    });
+
+    window.addEventListener("resize", function () {
+      if (window.innerWidth > 900) {
+        nav.classList.remove("open");
+        toggle.setAttribute("aria-expanded", "false");
+      }
+    });
+  }
+});
+</script>
+
+</body>
+</html>
